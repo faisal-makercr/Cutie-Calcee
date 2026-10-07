@@ -35,7 +35,7 @@ buttons.forEach(button => {
                 } else {
                     let result = eval(mathString);
                     display.value = result;
-                    if (statusMessage) statusMessage.textContent ="Boom! The answer is ${result}.";
+                    if (statusMessage) statusMessage.textContent ="Boom! The answer is {result}.";
                        }
                     }
             catch (error) {
