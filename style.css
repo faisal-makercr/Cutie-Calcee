@@ -1,12 +1,88 @@
 body {
-    display: flex;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
     background-color: #f4f4f9;
     font-family: Arial, sans-serif;
+    transition: backgroud-color 0.3s ease;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.top-nav a, .top-nav button {
+    padding: 8px 15px;
+    background-color: #555;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
 }
 
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 15px;
+}
+#status-message {
+    margin: 0;
+    font-family: 'courier New', monospace;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+#joke-section {
+    text-align: center;
+    width: 100%;
+}
+#joke-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#joke-btn:hover {background-color:#0056b3; }
+#joke-text {
+    margin-top: 10px;
+    font-style: italic;
+    color:#333;
+}
+
+body.dark-mode{
+    background-color: #121212;
+}
+body.dark-mode .top-nav button, body.dark-mode .top-nava {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+body.dark-mode #status-message {
+    color: #ffffff;
+}
+    body.dark-mode #joke-text {
+        color: #ffffff;
+}
 .calculator {
     background-color: #333;
     padding: 20px;
