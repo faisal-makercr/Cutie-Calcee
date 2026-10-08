@@ -1,18 +1,18 @@
 CutieCalce
 A fun, interactive calculator built with HTML, CSS, and JavaScript. It doesn't just do math it talks back to you.
-
+<br>
 Features
-Basic Arithmetic: Supports addition, subtraction, multiplication, and division.
-Smart Input: Prevents you from typing two operators in a row (no 5++3 errors).
-Divide by Zero Protection: Catches division by zero and gives a warning instead of crashing.
-Auto-Correction: If you click = with a hanging operator (like 5+ =), it automatically removes the operator and calculates the number.
-"Human" Status Messages: A dynamic text box below the calculator reacts to your inputs, giving you feedback, and encouragement.
-Responsive Grid Layout: Built using CSS Grid for perfectly aligned buttons.
+Basic Arithmetic: Supports addition, subtraction, multiplication, and division.<br>
+Smart Input: Prevents you from typing two operators in a row (no 5++3 errors).<br>
+Divide by Zero Protection: Catches division by zero and gives a warning instead of crashing.<br>
+Auto-Correction: If you click = with a hanging operator (like 5+ =), it automatically removes the operator and calculates the number.<br>
+"Human" Status Messages: A dynamic text box below the calculator reacts to your inputs, giving you feedback, and encouragement.<br>
+Responsive Grid Layout: Built using CSS Grid for perfectly aligned buttons.<br>
 
-Tech Stack
-HTML5: Semantic structure for the calculator layout.
-CSS3: Styling, hover effects, and CSS Grid for the button layout.
-JavaScript: DOM manipulation, event listeners, and math evaluation logic.
+Tech Stack:<br>
+HTML5: Semantic structure for the calculator layout.<br>
+CSS3: Styling, hover effects, and CSS Grid for the button layout.<br>
+JavaScript: DOM manipulation, event listeners, and math evaluation logic.<br>
 
 How to Run:
 Because this is a pure front-end project, you don't need to install any dependencies.
