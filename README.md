@@ -16,7 +16,7 @@ CSS3<br>
 JavaScript<br>
 
 Link of the website:<br>
-https://faisal-makercr.github.io/Cutie-Calcee/
+(https://cutiecalcee.vercel.app/calculator.html)
 
 Cutie-Calcee/
 <br>
