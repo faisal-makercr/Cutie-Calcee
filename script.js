@@ -1,7 +1,17 @@
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.btn');
 const statusMessage = document.getElementById('status-message');
+const themeToggle = document.getElementById('theme-toggle');
 
+themeToggle.addEventListener('click', () =>{
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')){
+        themeToggle.textContent='Light Mode';
+    }
+    else {
+        themeToggle.textContent='Dark Mode';
+    }
+});
 buttons.forEach(button => {
     button.addEventListener('click',() => {
         
@@ -9,7 +19,8 @@ buttons.forEach(button => {
 
         if (value === 'C') {
             display.value='';
-            if(statusMessage) statusMessage.textContent ="Cleared! Let's try again.";
+            statusMessage.textContent ="Cleared! Let's try again.";
+            statusMessage.style.opacity=1;
         }
         else if (value === '=') {
             if(display.value ===''){
@@ -46,10 +57,11 @@ buttons.forEach(button => {
             const operators = ['+','-','*','/'];
             let lastChar = display.value.slice(-1);
             if (operators.includes(value) && operators.includes(lastChar)) {
-                if(statusMessage) statusMessage.textContent="Hey! You can't put two operators in a row.";
+                statusMessage.textContent="Hey! You can't put two operators in a row.";
                 return;
             }
             display.value +=value;
+            statusMessage.style.opacity=1;
         }
     });
 });
