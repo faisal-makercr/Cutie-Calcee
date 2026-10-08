@@ -1,4 +1,4 @@
-CutieCalce
+CutieCalce<br>
 <br>
 A fun, interactive calculator built with HTML, CSS, and JavaScript.
 <br>
