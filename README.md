@@ -1,4 +1,5 @@
-CutieCalce<br>
+CutieCalce
+<br>
 A fun, interactive calculator built with HTML, CSS, and JavaScript.
 <br>
 Features:
@@ -16,9 +17,6 @@ JavaScript<br>
 
 Link of the website:<br>
 https://faisal-makercr.github.io/Cutie-Calcee/
-
-Project Structure:<br>
-text<br>
 
 Cutie-Calcee/
 <br>
