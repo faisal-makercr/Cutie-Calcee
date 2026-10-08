@@ -1,17 +1,13 @@
-// 1.Select the display and all the buttons fromthe Html
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.btn');
 const statusMessage = document.getElementById('status-message');
 
-// 2. Adding a click event listener to every single button
 buttons.forEach(button => {
     button.addEventListener('click',() => {
         
         const value =button.textContent.trim();
 
-        // 3. Logic for what to do when specific buttons are clicked
         if (value === 'C') {
-            // Clearing the screen
             display.value='';
             if(statusMessage) statusMessage.textContent ="Cleared! Let's try again.";
         }
@@ -39,7 +35,6 @@ buttons.forEach(button => {
                        }
                     }
             catch (error) {
-                // If the user types something mathematically impossible (Like 5+/3), show "Error"
                 display.value= 'Error';
                 if(statusMessage) statusMessage.textContent ="Hmm, that doesn't look like math to me.";
             }
